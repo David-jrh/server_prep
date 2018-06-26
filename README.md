@@ -17,11 +17,11 @@ til sidst skal der gives et fornuftigt og gerne kort host navn.
 
 lave en droplet CentOS ver 6,9 32 bit
 
-vælg billigst løsning for virtuel maskin kraft + størrelse
+vælg billigst løsning for virtuel maskin kraft + størrelse ( 1gb 20gb ssd)
 
-tag en server tæt på dig selv
+tag en server tæt på dig selv (amsterdam / london)
 
-vælg et host name (helst ikke for langt da det sstår i terminalen ved vher kommando)
+vælg et host name (helst ikke for langt da det sstår i terminalen ved hver kommando linje)
 
 
 
@@ -30,13 +30,14 @@ vælg et host name (helst ikke for langt da det sstår i terminalen ved vher kom
 
 brug de tilsendte informationer til at connecte med den virtuelle maskine via putty som skal hentes fra internettet.
 
-via tilsendt ip addresses oprettes forbindelse
+via tilsendt ip addresses oprettes forbindelse (gem evt som preset så der ikke skal indsætted ip ved opstart)
 
 i terminalen logges der inde med Root som brugernavn og tilsendt PW som skal ændres ved første login.
 
-herefter følges nedunderstående guide......... 
+herefter følges nedunderstående guide....
 
 husk: cd = change directory , lms se fil struktur og cat kan bruges istedet for nano
+
 
 
 -----
