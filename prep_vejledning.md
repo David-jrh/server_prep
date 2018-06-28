@@ -2,6 +2,8 @@
 
 sådan opsættes en linus server via Digital Ocean
 
+<img src="./images/download.jpg">
+
 # Opret Digital Ocean droplet
 
 efter du er logget ind, navigere til create droplets via create.
@@ -16,24 +18,26 @@ til sidst skal der gives et fornuftigt og gerne kort host navn.
 
 
 lave en droplet CentOS ver 6,9 32 bit
+<img src="./images/centos.png">
 
 vælg billigst løsning for virtuel maskin kraft + størrelse ( 1gb 20gb ssd)
 
 tag en server tæt på dig selv (amsterdam / london)
-
+<img src="./images/server.png">
 vælg et host name (helst ikke for langt da det sstår i terminalen ved hver kommando linje)
 
-
+<img src="./images/1.png">
 
 -----
 
 
 brug de tilsendte informationer til at connecte med den virtuelle maskine via putty som skal hentes fra internettet.
+<img src="./images/putty.png">
 
 via tilsendt ip addresses oprettes forbindelse (gem evt som preset så der ikke skal indsætted ip ved opstart)
 
 i terminalen logges der inde med Root som brugernavn og tilsendt PW som skal ændres ved første login.
-
+<img src="./images/login.png">
 herefter følges nedunderstående guide....
 
 husk: cd = change directory , lms se fil struktur og cat kan bruges istedet for nano
@@ -59,6 +63,7 @@ Installation
 ```
 yum install mysql-server
 ```
+<img src="./images/mysql.png">
 Start/stop/restart
 ```
 service mysqld start/stop/restart
