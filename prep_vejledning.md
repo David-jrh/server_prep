@@ -32,6 +32,7 @@ vælg et host name (helst ikke for langt da det sstår i terminalen ved hver kom
 
 
 brug de tilsendte informationer til at connecte med den virtuelle maskine via putty som skal hentes fra internettet.
+Download denne fra: http://www.putty.org/   
 <img src="./images/putty.png">
 
 via tilsendt ip addresses oprettes forbindelse (gem evt som preset så der ikke skal indsætted ip ved opstart)
@@ -64,6 +65,7 @@ Installation
 yum install mysql-server
 ```
 <img src="./images/mysql.png">
+se billed for svar på installations spørgsmål
 Start/stop/restart
 ```
 service mysqld start/stop/restart
@@ -75,18 +77,16 @@ sudo /usr/bin/mysql_secure_installation
 ```
 
 ## 2. Installer Node.js
-Installation
-```
-yum install epel-release
-yum install nodejs
-yum install npm
-npm install -g n
-```
-Opdater nodejs
-```
-n lts
-n
-```
+ ||yum install epel-release|| tryk ||y||
+ ||yum install nodejs||
+ ||yum install npm|| tryk ||y|| tryk ||y||
+ ||sudo npm config set strict-ssl false||
+ ||yum install -g n||
+ ||n lts||
+ ||n||
+ på digital ocean tryk på 'on' knap, for at slukke den. tænd igen (genstart)
+
+Luk din puTTy og åben den igen
 
 **Genstart din linux-box nu.**
 
@@ -117,7 +117,7 @@ git config --global user.email "din@email.dk"
 
 Tjek konfigurationen
 ```
-nano ~/.gitconfig
+nano ~/.gitconfig eller cat ~/
 ```
 
 ## 5. Opret et nøglesæt til at logge ind på GitHub
@@ -129,6 +129,7 @@ ssh-keygen -t rsa
 Åbn den offentlige nøgle
 ```
 nano ~/.ssh/id_rsa.pub
+(shift x for at forlade)
 
 Kopier indholdet af den offentlige nøgle til GitHub -> Settings -> SSH and GPG keys -> New SSH key
 ```
@@ -149,5 +150,42 @@ git clone git@github.com:brugernavn/repository
 
 (og når du har en opdatering, skal du lave et pull)
 ```
-git pull git@github.com:brugernavn/repository
+git pull git@github.com:brugernavn/repository'
+
+```
+
+
+hvis det er forked så skal der stå master efter repository.
+
+npm install efter cloning fra git. 
+
+
+-------
+sætter pm 2 settings op
+
+```
+pm2 startup
+
+```
+
+pm2 start app/app.js
+
+
+```
+ pm2 start app
+ 
+```
+
+man kan også lave alias for hurtiger pull fx:
+
+```
+  alias pull="git pull git@github.com:David-jrh/expressjs master"
+  
+```
+
+for at se en færdig side skrive ip + : valgte port :
+
+```
+
+http://188.166.150.132:3000/
 ```
