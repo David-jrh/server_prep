@@ -197,3 +197,5 @@ for at se en færdig side skrive ip + : valgte port :
 
 http://188.166.150.132:3000/
 ```
+
+sudo rm -rf *stivej*
