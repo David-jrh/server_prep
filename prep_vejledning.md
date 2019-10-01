@@ -172,9 +172,17 @@ pm2 start app/app.js
 
 
 ```
- pm2 start app
+ pm2 start app(.js)
  
 ```
+for at få pm til ikke at slukke efter putty stoppes
+
+```
+$ pm2 save
+$ pm2 freeze
+ 
+```
+
 
 man kan også lave alias for hurtiger pull fx:
 
